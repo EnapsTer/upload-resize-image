@@ -1,0 +1,15 @@
+{% include "base.html" %}
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 offset-3 text-center" style="margin-top: 20px;">
+                {% for image in images%}
+                    <div class="col">
+                        <a href="{% url 'image_page' id=image.id%}"><img src="{{ image.image.url }}" class="img-fluid img-thumbnail"></a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>

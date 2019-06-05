@@ -15,6 +15,12 @@ https://example.com/example.png
         python3 manage.py runserver
 
 
+Админка: /admin/
+
+Login admin
+
+password admin
+
 #Способ деплоя:
 
 
